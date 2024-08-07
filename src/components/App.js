@@ -24,9 +24,9 @@ function App() {
       .then((data) => setPets(data));
   }
 
-  function onAdoptPet(adoptedPet) {
+  function onAdoptPet(adoptedPetId) {
     pets.map((pet) => {
-      if (pet.id === adoptedPet.id) {
+      if (pet.id === adoptedPetId) {
         return { ...pet, isAdopted: true };
       } else {
         return pet;

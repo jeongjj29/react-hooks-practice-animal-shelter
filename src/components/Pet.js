@@ -4,7 +4,7 @@ function Pet({ pet, onAdoptPet }) {
   const [isAdopted, setIsAdopted] = useState(pet.isAdopted);
 
   function handleAdoptClick() {
-    onAdoptPet(pet);
+    onAdoptPet(pet.id);
     setIsAdopted(true);
   }
 

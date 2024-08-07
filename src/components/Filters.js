@@ -1,10 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 
 function Filters({ onChangeType, onFindPetsClick }) {
-  const [filterValue, setFilterValue] = useState("all");
-
   function handleFilterTypeChange(e) {
-    setFilterValue(e.target.value);
     onChangeType(e.target.value);
   }
 
